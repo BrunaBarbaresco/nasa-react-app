@@ -1,5 +1,14 @@
-import React from "react";
+export default function Main(props) {
+  const { data } = props;
 
-export default function Main() {
-  return <></>;
+  return (
+    <div className="img-container">
+      <img
+        src={data?.hdurl}
+        alt={data.title || "bg-image"}
+        className="bg-image"
+      />
+      ;
+    </div>
+  );
 }
